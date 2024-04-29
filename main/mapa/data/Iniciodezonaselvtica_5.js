@@ -1,0 +1,1 @@
+var json_Iniciodezonaselvtica_5 = {"type":"FeatureCollection","name":"Iniciodezonaselvtica_5","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null},"geometry":{"type":"Point","coordinates":[-67.567373384042085,5.624986262556869]}}]}

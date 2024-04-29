@@ -1,0 +1,98 @@
+[20-Apr-2024 14:41:03 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 14:42:46 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 14:43:21 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 14:44:25 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 14:57:28 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 14:57:56 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:20:06 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:23:24 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:34:34 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:34:34 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 15:34:34 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 15:34:52 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:34:52 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 15:34:52 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 15:35:23 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:35:23 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 15:35:23 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 15:35:23 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 15:35:23 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 15:35:23 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 15:37:46 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:03:48 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:03:48 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 17:03:48 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 17:06:45 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:07:52 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:07:53 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:41:46 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:53:34 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 17:53:34 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 17:53:34 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 17:54:21 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:02:32 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:02:58 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:02:58 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 18:02:58 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 18:03:31 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:03:45 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:03:47 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:03:47 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 18:03:47 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 18:10:56 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:11:28 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:11:28 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 18:11:28 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 18:15:43 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:31:33 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:33:35 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:37:16 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:37:16 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 18:37:16 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 18:38:46 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:42:06 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:43:40 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:43:50 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 18:52:05 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 19:38:08 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 20:36:10 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 20:36:10 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 20:36:10 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 20:45:46 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 20:45:46 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 20:45:46 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 20:46:18 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 21:08:52 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 21:08:52 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[20-Apr-2024 21:08:52 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[20-Apr-2024 21:09:55 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:12:31 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:17:05 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:17:05 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:18:14 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:18:17 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:18:17 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:18:17 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:20:57 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:20:59 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[20-Apr-2024 22:21:02 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[21-Apr-2024 01:53:36 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[21-Apr-2024 01:53:36 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[21-Apr-2024 01:53:36 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[21-Apr-2024 05:49:43 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[21-Apr-2024 05:50:25 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[21-Apr-2024 05:50:25 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[21-Apr-2024 05:50:25 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[22-Apr-2024 11:09:14 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[22-Apr-2024 11:09:14 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[22-Apr-2024 11:09:14 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[22-Apr-2024 18:33:37 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[22-Apr-2024 18:33:37 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[22-Apr-2024 18:33:37 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[22-Apr-2024 18:33:54 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[24-Apr-2024 19:06:17 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[24-Apr-2024 19:06:17 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[24-Apr-2024 19:06:17 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
+[24-Apr-2024 19:06:18 America/Manaus] PHP Notice:  session_start(): A session had already been started - ignoring in /home/gitcomco/iseller-tiendas.com/bikerrock/resources/back/conexion.php on line 25
+[24-Apr-2024 19:06:18 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 3
+[24-Apr-2024 19:06:18 America/Manaus] PHP Notice:  Undefined index: nombre in /home/gitcomco/iseller-tiendas.com/bikerrock/main/index.php on line 131
