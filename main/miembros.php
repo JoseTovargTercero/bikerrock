@@ -22,7 +22,6 @@ if ($_SESSION['nombre'] == '') {
     <link rel="stylesheet" href="../resources/fonts/ionicons/ionicons.min.css">
     <link rel="stylesheet" href="../resources/fonts/fontawesome/font-awesome.min.css">
 
-    <link rel="stylesheet" href="../resources/css/pageloader.css">
 
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/main.css">

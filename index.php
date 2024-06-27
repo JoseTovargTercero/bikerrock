@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="resources/fonts/ionicons/ionicons.min.css">
     <link rel="stylesheet" href="resources/fonts/fontawesome/font-awesome.min.css">
 
-    <link rel="stylesheet" href="resources/css/pageloader.css">
 
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/js/vendor/swiper.min.css">
@@ -31,19 +30,6 @@
 
 
 <body id="menu" class="body-page">
-
-
-    <div class="page-loader" id="page-loader">
-        <div>
-            <svg style="width: 285px;height: 78px;margin-bottom: -82px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#08890014" fill-opacity="1" d="M0,160L205.7,192L411.4,160L617.1,96L822.9,32L1028.6,192L1234.3,256L1440,32L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path>
-            </svg>
-            <div id="loop" class="center"></div>
-            <div id="bike-wrapper" class="center">
-                <div id="bike" class="centerBike"></div>
-            </div>
-        </div>
-    </div>
 
 
 

@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="resources/fonts/ionicons/ionicons.min.css">
     <link rel="stylesheet" href="resources/fonts/fontawesome/font-awesome.min.css">
 
-    <link rel="stylesheet" href="resources/css/pageloader.css">
 
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/js/vendor/swiper.min.css">
@@ -35,12 +34,6 @@
 
 <body id="menu" class="body-page">
 
-
-    <div class="page-loader" id="page-loader">
-        <div>
-            <div class="icon ion-spin"></div>
-        </div>
-    </div>
 
     <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
 
