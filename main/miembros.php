@@ -10,19 +10,13 @@ if ($_SESSION['nombre'] == '') {
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Biker Rock Amazonas MC</title>
-
-
     <meta name="description" content="Nice and creative portfolio template. Fully responsive with cool animations">
     <meta name="keywords" content="agency, bootstrap 4, creative, flexbox, jquery, minimalist, motion design, onepage, photography, portfolio, product, responsive, studio, video">
-
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="icon" type="image/png" sizes="16x16" href="../resources/img/logo.png">
-
     <link rel="stylesheet" href="../resources/fonts/opensans/stylesheet.css">
-    <link rel="stylesheet" href="../resources/fonts/ionicons/ionicons.min.css">
+    <link rel="stylesheet" href="../resources/fonts/ionicorns/ionicons.min.css">
     <link rel="stylesheet" href="../resources/fonts/fontawesome/font-awesome.min.css">
-
-
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/main.css">
     <link rel="stylesheet" href="../resources/css/style-gradient.css">
