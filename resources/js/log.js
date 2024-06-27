@@ -17,7 +17,7 @@ function log() {
             window.location.href = 'main/index.php';
         } else if (msg.trim() == 'false') {
             $('#informacion').show()
-         $('#informacion').html('Datos incorrectos, inténtelo nuevamente')
+         $('#informacion').html('No tienes acceso a la ruta, comunicate con el administrador')
             
         }else if(msg.trim() == 'dispositivo'){
          $('#informacion').show()

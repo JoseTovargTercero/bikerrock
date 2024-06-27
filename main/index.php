@@ -34,6 +34,13 @@ if ($_SESSION['nombre'] == '') {
     <link rel="stylesheet" href="mapa/css/leaflet.css">
     <link rel="stylesheet" href="mapa/css/qgis2web.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="mapa/js/leaflet.awesome-markers.css">
     <style>
         #map {
             width: 100%;
@@ -43,14 +50,22 @@ if ($_SESSION['nombre'] == '') {
 </head>
 
 <body id="menu" class="body-page">
+
     <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
+
     <div class="page-loader" id="page-loader">
         <div>
-            <div class="icon ion-spin"></div>
+            <svg style="width: 285px;height: 78px;margin-bottom: -82px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#08890014" fill-opacity="1" d="M0,160L205.7,192L411.4,160L617.1,96L822.9,32L1028.6,192L1234.3,256L1440,32L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path>
+            </svg>
+            <div id="loop" class="center"></div>
+            <div id="bike-wrapper" class="center">
+                <div id="bike" class="centerBike"></div>
+            </div>
         </div>
     </div>
 
@@ -83,18 +98,26 @@ if ($_SESSION['nombre'] == '') {
                             <span class="txt">Inicio</span>
                         </a>
                     </li>
-                    <li class="nav-item" data-menuanchor="about">
-                        <a href="index.html#about">
-                            <i class="icon ion-star"></i>
-                            <span class="txt">Video Ruta</span>
-                        </a>
-                    </li>
                     <li class="nav-item" data-menuanchor="services">
                         <a href="index.html#services">
                             <i class="icon ion-clipboard"></i>
-                            <span class="txt">Mapa</span>
+                            <span class="txt">Ruta</span>
                         </a>
                     </li>
+
+
+                    <?php
+                    if ($_SESSION['rol'] == '1' && $_SESSION['u_nivel'] == '1') {
+                        echo '
+                            <li class="nav-item" >
+                            <a href="miembros.php">
+                                <i class="icon ion-ios-people"></i>
+                                <span class="txt">Miembros y Solicitudes</span>
+                            </a>
+                        </li>
+                            ';
+                    }
+                    ?>
                 </ul>
             </nav>
 
@@ -126,33 +149,38 @@ if ($_SESSION['nombre'] == '') {
                         <div class="col-12 col-md-12 text-center">
 
                             <div class="title-desc">
-                                <h2 class="display-4 display-title home-title anim-1">Bienvenido</h2>
+                                <h2 class="display-4 display-title home-title anim-1">¡Bienvenido!</h2>
                                 <h4 class="anim-2 opacity-75">
-                                    Hola <b> <?php echo $_SESSION['nombre'] ?> </b>, desde el equipo de <b>BIKER ROCK AMAZONAS MC</b> nos complace contar contigo para la próxima rodada.
-                                    <br> <b>Hora de salida: 8:30 am, lugar: Terminal de Pasajeros Melicio Pérez (Entrada lateral)</b>
+                                    Hola <b> <?php echo $_SESSION['nombre'] ?></b>, 
+
+                                    <?php if ($_SESSION['kms'] != '0') { ?>
+                                   
+                                    Has sumado un total de <b style="font-size: 22px;" class="text-warning">  <i class="fa fa-bar-chart"></i> <?php echo $_SESSION['kms'] ?> km</b>, sigamos aumentando la cifra en nuestra proxima rodada. 
+                                <?php }else {
+                                    echo 'desde el equipo de <b>BIKER ROCK AMAZONAS MC</b> nos complace contar contigo para la próxima rodada.';
+                                } ?>
+                                    
+                                    
+                                    <br> Hora de salida: <b>8:30 am</b>, lugar: <b>Redoma Autana.</b>
                                 </h4>
                             </div>
 
+                        
                             <div class="btns-action anim-3">
-                                <a class="btn btn-outline-white" href="index.php#about">
-                                    <span class="text">Video Ruta</span>
+                                <a class="btn btn-outline-white" href="index.php#services">
+                                    <span class="text">ver Ruta</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <footer class="section-footer scrolldown">
-                    <a class="down">
-                        <span class="icon"></span>
-                        <span class="txt">Video</span>
-                    </a>
-                </footer>
+
             </div>
 
         </div>
 
-
+        <!--
         <div class="section section-description fp-auto-height-responsive about-section" data-section="about">
 
             <div class="section-wrapper center-vh dir-col anim">
@@ -206,6 +234,7 @@ if ($_SESSION['nombre'] == '') {
             </div>
 
         </div>
+                                            -->
 
 
         <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
@@ -213,13 +242,13 @@ if ($_SESSION['nombre'] == '') {
             <div class="section-wrapper twoside center-vh dir-col anim">
 
                 <div class="section-title text-center">
-                    <h2 class="title-bg">Mapa</h2>
-                    <h2 class="display-4 display-title anim-2 mb-32">Mapa</h2>
+                    <h2 class="title-bg">Ruta</h2>
+                    <h2 class="display-4 display-title anim-2 mb-32">Ruta</h2>
                 </div>
 
 
                 <div class="item fade-1" style="    width: 100%;">
-                            <div id="map"></div>
+                    <div id="map"></div>
                 </div>
 
 
@@ -257,21 +286,12 @@ if ($_SESSION['nombre'] == '') {
         </div>
     </footer>
 
-
-
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="../resources/js/vendor/jquery-1.12.4.min.js"></script>
-
     <script src="../resources/js/vendor/scrolloverflow.min.js"></script>
     <script src="../resources/js/vendor/all.js"></script>
     <script src="../resources/js/particlejs/particles.min.js"></script>
-
     <script src="../resources/js/form_script.js"></script>
-
     <script src="../resources/js/main.js"></script>
-
-
-
     <script src="mapa/js/qgis2web_expressions.js"></script>
     <script src="mapa/js/leaflet.js"></script>
     <script src="mapa/js/multi-style-layer.js"></script>
@@ -282,10 +302,11 @@ if ($_SESSION['nombre'] == '') {
     <script src="mapa/js/labelgun.min.js"></script>
     <script src="mapa/js/labels.js"></script>
     <script src="mapa/data/Hidrografia_1.js"></script>
-    <script src="mapa/data/Ruta_2.js"></script>
-    <script src="mapa/data/Iniciodezonarocosalaja_3.js"></script>
-    <script src="mapa/data/Puntodereunion_4.js"></script>
-    <script src="mapa/data/Iniciodezonaselvtica_5.js"></script>
+    <script src="mapa/data/Ruta_1.js"></script>
+    <script src="mapa/data/AlternativaBuenaprobabilidadcopiar_2.js"></script>
+    <script src="mapa/data/rutaimposible_3.js"></script>
+    <script src="mapa/js/leaflet.awesome-markers.js"></script>
+
 </body>
 <script>
     var map = L.map('map', {
@@ -296,6 +317,8 @@ if ($_SESSION['nombre'] == '') {
         [5.384808886838997, -67.87893779497502],
         [5.721437595418332, -67.1819183513284]
     ]);
+    // Creates a red marker with the coffee icon
+
 
 
 
@@ -353,9 +376,35 @@ if ($_SESSION['nombre'] == '') {
     map.addLayer(layer_Hidrografia_1);
 
 
-    function style_Ruta_2_0() {
+
+
+
+
+
+
+    function pop_Ruta_1(feature, layer) {
+        var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+        layer.bindPopup(popupContent, {
+            maxHeight: 400
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+    function style_Ruta_1_0() {
         return {
-            pane: 'pane_Ruta_2',
+            pane: 'pane_Ruta_1',
             opacity: 1,
             color: 'rgba(0,0,0,1.0)',
             dashArray: '',
@@ -367,9 +416,9 @@ if ($_SESSION['nombre'] == '') {
         }
     }
 
-    function style_Ruta_2_1() {
+    function style_Ruta_1_1() {
         return {
-            pane: 'pane_Ruta_2',
+            pane: 'pane_Ruta_1',
             opacity: 1,
             color: 'rgba(255,255,255,1.0)',
             dashArray: '',
@@ -380,24 +429,25 @@ if ($_SESSION['nombre'] == '') {
             interactive: false,
         }
     }
-    map.createPane('pane_Ruta_2');
-    map.getPane('pane_Ruta_2').style.zIndex = 402;
-    map.getPane('pane_Ruta_2').style['mix-blend-mode'] = 'normal';
-    var layer_Ruta_2 = new L.geoJson.multiStyle(json_Ruta_2, {
+    map.createPane('pane_Ruta_1');
+    map.getPane('pane_Ruta_1').style.zIndex = 401;
+    map.getPane('pane_Ruta_1').style['mix-blend-mode'] = 'normal';
+    var layer_Ruta_1 = new L.geoJson.multiStyle(json_Ruta_1, {
         attribution: '',
         interactive: false,
-        dataVar: 'json_Ruta_2',
-        layerName: 'layer_Ruta_2',
-        pane: 'pane_Ruta_2',
-        styles: [style_Ruta_2_0, style_Ruta_2_1, ]
+        dataVar: 'json_Ruta_1',
+        layerName: 'layer_Ruta_1',
+        pane: 'pane_Ruta_1',
+        onEachFeature: pop_Ruta_1,
+        styles: [style_Ruta_1_0, style_Ruta_1_1, ]
     });
-    bounds_group.addLayer(layer_Ruta_2);
-    map.addLayer(layer_Ruta_2);
+    bounds_group.addLayer(layer_Ruta_1);
+    map.addLayer(layer_Ruta_1);
 
-    function pop_Iniciodezonarocosalaja_3(feature, layer) {
+    function pop_AlternativaBuenaprobabilidadcopiar_2(feature, layer) {
         var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">ZONA ROCOSA</td>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
         layer.bindPopup(popupContent, {
@@ -405,47 +455,38 @@ if ($_SESSION['nombre'] == '') {
         });
     }
 
-    function style_Iniciodezonarocosalaja_3_0() {
+    function style_AlternativaBuenaprobabilidadcopiar_2_0() {
         return {
-            pane: 'pane_Iniciodezonarocosalaja_3',
-            radius: 8.0,
+            pane: 'pane_AlternativaBuenaprobabilidadcopiar_2',
             opacity: 1,
-            color: 'rgba(0,0,0,1.0)',
+            color: 'rgba(219,198,6,1.0)',
             dashArray: '',
-            lineCap: 'butt',
-            lineJoin: 'miter',
-            weight: 2.0,
-            fill: true,
-            fillOpacity: 1,
-            fillColor: 'rgba(255,255,255,1.0)',
-            interactive: true,
+            lineCap: 'square',
+            lineJoin: 'bevel',
+            weight: 3.0,
+            fillOpacity: 0,
+            interactive: false,
         }
     }
-    map.createPane('pane_Iniciodezonarocosalaja_3');
-    map.getPane('pane_Iniciodezonarocosalaja_3').style.zIndex = 403;
-    map.getPane('pane_Iniciodezonarocosalaja_3').style['mix-blend-mode'] = 'normal';
-    var layer_Iniciodezonarocosalaja_3 = new L.geoJson(json_Iniciodezonarocosalaja_3, {
+    map.createPane('pane_AlternativaBuenaprobabilidadcopiar_2');
+    map.getPane('pane_AlternativaBuenaprobabilidadcopiar_2').style.zIndex = 402;
+    map.getPane('pane_AlternativaBuenaprobabilidadcopiar_2').style['mix-blend-mode'] = 'normal';
+    var layer_AlternativaBuenaprobabilidadcopiar_2 = new L.geoJson(json_AlternativaBuenaprobabilidadcopiar_2, {
         attribution: '',
-        interactive: true,
-        dataVar: 'json_Iniciodezonarocosalaja_3',
-        layerName: 'layer_Iniciodezonarocosalaja_3',
-        pane: 'pane_Iniciodezonarocosalaja_3',
-        onEachFeature: pop_Iniciodezonarocosalaja_3,
-        pointToLayer: function(feature, latlng) {
-            var context = {
-                feature: feature,
-                variables: {}
-            };
-            return L.circleMarker(latlng, style_Iniciodezonarocosalaja_3_0(feature));
-        },
+        interactive: false,
+        dataVar: 'json_AlternativaBuenaprobabilidadcopiar_2',
+        layerName: 'layer_AlternativaBuenaprobabilidadcopiar_2',
+        pane: 'pane_AlternativaBuenaprobabilidadcopiar_2',
+        onEachFeature: pop_AlternativaBuenaprobabilidadcopiar_2,
+        style: style_AlternativaBuenaprobabilidadcopiar_2_0,
     });
-    bounds_group.addLayer(layer_Iniciodezonarocosalaja_3);
-    map.addLayer(layer_Iniciodezonarocosalaja_3);
+    bounds_group.addLayer(layer_AlternativaBuenaprobabilidadcopiar_2);
+    map.addLayer(layer_AlternativaBuenaprobabilidadcopiar_2);
 
-    function pop_Puntodereunion_4(feature, layer) {
+    function pop_rutaimposible_3(feature, layer) {
         var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">PUNTO DE REUNION</td>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
         layer.bindPopup(popupContent, {
@@ -453,121 +494,91 @@ if ($_SESSION['nombre'] == '') {
         });
     }
 
-    function style_Puntodereunion_4_0() {
+    function style_rutaimposible_3_0() {
         return {
-            pane: 'pane_Puntodereunion_4',
-            radius: 9.4,
+            pane: 'pane_rutaimposible_3',
             opacity: 1,
-            color: 'rgba(0,0,0,1.0)',
+            color: 'rgba(219,30,42,1.0)',
             dashArray: '',
-            lineCap: 'butt',
-            lineJoin: 'miter',
-            weight: 1.0,
-            fill: true,
-            fillOpacity: 1,
-            fillColor: 'rgba(255,255,255,1.0)',
-            interactive: true,
+            lineCap: 'square',
+            lineJoin: 'bevel',
+            weight: 3.0,
+            fillOpacity: 0,
+            interactive: false,
         }
     }
-
-    function style_Puntodereunion_4_1() {
-        return {
-            pane: 'pane_Puntodereunion_4',
-            radius: 1.4,
-            opacity: 1,
-            color: 'rgba(0,0,0,1.0)',
-            dashArray: '',
-            lineCap: 'butt',
-            lineJoin: 'miter',
-            weight: 2.0,
-            fill: true,
-            fillOpacity: 1,
-            fillColor: 'rgba(0,0,0,1.0)',
-            interactive: true,
-        }
-    }
-    map.createPane('pane_Puntodereunion_4');
-    map.getPane('pane_Puntodereunion_4').style.zIndex = 404;
-    map.getPane('pane_Puntodereunion_4').style['mix-blend-mode'] = 'normal';
-    var layer_Puntodereunion_4 = new L.geoJson.multiStyle(json_Puntodereunion_4, {
+    map.createPane('pane_rutaimposible_3');
+    map.getPane('pane_rutaimposible_3').style.zIndex = 403;
+    map.getPane('pane_rutaimposible_3').style['mix-blend-mode'] = 'normal';
+    var layer_rutaimposible_3 = new L.geoJson(json_rutaimposible_3, {
         attribution: '',
-        interactive: true,
-        dataVar: 'json_Puntodereunion_4',
-        layerName: 'layer_Puntodereunion_4',
-        pane: 'pane_Puntodereunion_4',
-        onEachFeature: pop_Puntodereunion_4,
-        pointToLayers: [function(feature, latlng) {
-            var context = {
-                feature: feature,
-                variables: {}
-            };
-            return L.circleMarker(latlng, style_Puntodereunion_4_0(feature));
-        }, function(feature, latlng) {
-            var context = {
-                feature: feature,
-                variables: {}
-            };
-            return L.circleMarker(latlng, style_Puntodereunion_4_1(feature));
-        }, ]
+        interactive: false,
+        dataVar: 'json_rutaimposible_3',
+        layerName: 'layer_rutaimposible_3',
+        pane: 'pane_rutaimposible_3',
+        onEachFeature: pop_rutaimposible_3,
+        style: style_rutaimposible_3_0,
     });
-    bounds_group.addLayer(layer_Puntodereunion_4);
-    map.addLayer(layer_Puntodereunion_4);
-
-    function pop_Iniciodezonaselvtica_5(feature, layer) {
-        var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">ZONA SELVÁTICA</td>\
-                    </tr>\
-                </table>';
-        layer.bindPopup(popupContent, {
-            maxHeight: 400
-        });
-    }
-
-    function style_Iniciodezonaselvtica_5_0() {
-        return {
-            pane: 'pane_Iniciodezonaselvtica_5',
-            radius: 8.0,
-            opacity: 1,
-            color: 'rgba(61,128,53,1.0)',
-            dashArray: '',
-            lineCap: 'butt',
-            lineJoin: 'miter',
-            weight: 2.0,
-            fill: true,
-            fillOpacity: 1,
-            fillColor: 'rgba(84,176,74,1.0)',
-            interactive: true,
-        }
-    }
-    map.createPane('pane_Iniciodezonaselvtica_5');
-    map.getPane('pane_Iniciodezonaselvtica_5').style.zIndex = 405;
-    map.getPane('pane_Iniciodezonaselvtica_5').style['mix-blend-mode'] = 'normal';
-    var layer_Iniciodezonaselvtica_5 = new L.geoJson(json_Iniciodezonaselvtica_5, {
-        attribution: '',
-        interactive: true,
-        dataVar: 'json_Iniciodezonaselvtica_5',
-        layerName: 'layer_Iniciodezonaselvtica_5',
-        pane: 'pane_Iniciodezonaselvtica_5',
-        onEachFeature: pop_Iniciodezonaselvtica_5,
-        pointToLayer: function(feature, latlng) {
-            var context = {
-                feature: feature,
-                variables: {}
-            };
-            return L.circleMarker(latlng, style_Iniciodezonaselvtica_5_0(feature));
-        },
-    });
-    bounds_group.addLayer(layer_Iniciodezonaselvtica_5);
-    map.addLayer(layer_Iniciodezonaselvtica_5);
+    bounds_group.addLayer(layer_rutaimposible_3);
+    map.addLayer(layer_rutaimposible_3);
     setBounds();
 
 
 
-    map.flyTo([5.650063151819455, -67.594146704983004], 14, {
-            animate: true,
-            duration: 2
-       });
+
+
+
+
+
+
+
+
+
+    var redMarker = L.AwesomeMarkers.icon({
+        icon: 'coffee',
+        markerColor: 'red'
+    });
+
+
+
+
+
+    L.marker([5.7889654, -67.6024900], {
+        icon: L.AwesomeMarkers.icon({
+            icon: 'flag-checkered',
+            prefix: 'fa',
+            markerColor: 'black'
+        })
+    }).bindPopup('Destino').addTo(map);
+    L.marker([5.7864882, -67.6035946], {
+        icon: L.AwesomeMarkers.icon({
+            icon: 'camera',
+            prefix: 'fa',
+            markerColor: 'red'
+        })
+    }).bindPopup('Punto fotográfico').addTo(map);
+    L.marker([5.671224, -67.596277], {
+        icon: L.AwesomeMarkers.icon({
+            icon: 'flag',
+            prefix: 'fa',
+            markerColor: 'green'
+        })
+    }).bindPopup('Punto de salida').addTo(map);
+    L.marker([5.7620173, -67.5947784], {
+        icon: L.AwesomeMarkers.icon({
+            icon: 'glass',
+            prefix: 'fa',
+            markerColor: 'blue'
+        })
+    }).bindPopup('Hidratación').addTo(map);
+
+
+
+
+    map.flyTo([5.73532, -67.57972], 12, {
+        animate: true,
+        duration: 3
+    });
 </script>
 
 </html>

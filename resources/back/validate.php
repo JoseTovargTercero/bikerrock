@@ -93,7 +93,7 @@ $device_details =   $user_os . ' - ' . getIp();
 
 $fn = date('d-m-Y', strtotime($fn));
 
-$stmt = mysqli_prepare($conexion, "SELECT * FROM `users` WHERE cedula = ? AND fn = ?");
+$stmt = mysqli_prepare($conexion, "SELECT * FROM `users` WHERE cedula = ? AND fn = ? AND access='1'");
 $stmt->bind_param("ss", $cedula, $fn);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -103,8 +103,12 @@ if ($result->num_rows > 0) {
 
 		$_SESSION['u_nivel'] = $row['nivel'];
 		$_SESSION['nombre'] = $row['nombre'];
+		$_SESSION['rol'] = $row['rol'];
+		$_SESSION['kms'] = $row['kms'];
 		$id = $row['id'];
 
+		$estado = 'true';
+/*
 		if ($row['dispositivo'] == '') {
 
 
@@ -122,7 +126,7 @@ if ($result->num_rows > 0) {
 				$estado = 'true';
 				$_SESSION['dispositivo'] = $row['dispositivo'];
 			}
-		}
+		}*/
 	}
 } else {
 	$estado = 'false';

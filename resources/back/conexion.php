@@ -45,8 +45,6 @@ function clear($value){
 	$value = str_replace("DROP", "", $value);
 	$value = str_replace("TRUNCATE", "", $value);
 	$value = str_replace("DELETE", "", $value);
-	$value = str_replace("<", "", $value);
-	$value = str_replace(">", "", $value);
 	$value = str_replace(";", "", $value);
 	return $value;
 }

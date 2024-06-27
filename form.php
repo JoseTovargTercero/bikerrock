@@ -27,43 +27,38 @@
 
     <link rel="stylesheet" href="resources/css/main.css">
     <link rel="stylesheet" href="resources/css/style-gradient.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
-
-
 </style>
 
 <body id="menu" class="body-page">
 
-
     <div class="page-loader" id="page-loader">
         <div>
-            <div class="icon ion-spin"></div>
+            <svg style="width: 285px;height: 78px;margin-bottom: -82px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#08890014" fill-opacity="1" d="M0,160L205.7,192L411.4,160L617.1,96L822.9,32L1028.6,192L1234.3,256L1440,32L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path>
+            </svg>
+            <div id="loop" class="center"></div>
+            <div id="bike-wrapper" class="center">
+                <div id="bike" class="centerBike"></div>
+            </div>
         </div>
     </div>
-
     <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
         <a class="navbar-brand" href="index.html#home">
             <span class="logo">
                 <img class="light-logo" src="resources/img/logo.png" alt="Logo">
             </span>
         </a>
-
     </header>
-
-
     <div class="page-cover">
 
         <div class="cover-bg bg-img" data-image-src="resources/img/fondo.jpg"></div>
 
         <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
     </div>
-
-
     <main class="page-main page-fullpage main-anim" id="mainpage">
-
-
-
-
         <style>
             .mcontrol {
                 background-color: #ffffff38;
@@ -72,10 +67,10 @@
         </style>
         <div class="section section-register fp-auto-height-responsive ">
 
-            <div style="width: 70%;">
+            <div style="    min-width: 70%;">
 
 
-                <div class=" anim ">
+                <div class=" anim " style="    max-width: 90%;margin: auto;">
                     <div class="row ">
                         <div class="col-12 col-md-12 col-lg-12">
 
@@ -84,7 +79,7 @@
                                     <h3 class="mb-0 display-title anim-2 nowrap">Formulario de admisión</h3>
                                     <p class="invite anim-3 text-muted"><small>Rellene el formulario, una vez verifiquemos sus datos, le contactaremos.</small></p>
                                 </div>
-                                <div class="form-input  anim-4 mt-3 ">
+                                <form enctype="multipart/form-data" id="filesForm" method="post" class="form-input  anim-4 mt-3 ">
 
                                     <div class="row">
 
@@ -92,56 +87,56 @@
                                         <div class="col-lg-6">
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Cédula</label>
-                                                <input id="reg-cedula" class="form-control mcontrol" />
+                                                <label for="cedula">Cédula</label>
+                                                <input id="cedula" name="cedula" required class="form-control mcontrol" />
                                             </div>
 
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-nombre">Nombre</label>
-                                                <input id="reg-nombre" class="form-control mcontrol" />
+                                                <label for="nombre">Nombre</label>
+                                                <input id="nombre" name="nombre" required class="form-control mcontrol" />
                                             </div>
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-fn">Fecha de nacimiento</label>
-                                                <input id="reg-fn" class="form-control mcontrol" type="date" />
+                                                <label for="fn">Fecha de nacimiento</label>
+                                                <input id="fn" name="fn" required class="form-control mcontrol" type="date" />
                                             </div>
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Teléfono</label>
-                                                <input id="reg-cedula" class="form-control mcontrol" />
+                                                <label for="telefono">Teléfono</label>
+                                                <input id="telefono" name="telefono" required class="form-control mcontrol" />
                                             </div>
 
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Correo</label>
-                                                <input id="reg-cedula" class="form-control mcontrol" />
+                                                <label for="correo">Correo electrónico</label>
+                                                <input id="correo" name="correo" type="email" required class="form-control mcontrol" />
                                             </div>
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Lugar de residencia</label>
-                                                <input id="reg-cedula" class="form-control mcontrol" />
+                                                <label for="residencia">Lugar de residencia</label>
+                                                <input id="residencia" name="residencia" required class="form-control mcontrol" />
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Foto de la cedula</label>
-                                                <input id="reg-cedula" type="file" class="form-control mcontrol" />
+                                                <label for="foto_cedula[]">Foto de la cedula</label>
+                                                <input id="foto_cedula[]" name="foto_cedula[]" accept=".jpg, .png" type="file" required class="form-control mcontrol" />
                                             </div>
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Foto del carnet de circulación o titulo</label>
-                                                <input id="reg-cedula" type="file" class="form-control mcontrol" />
+                                                <label for="foto_carnet[]">Foto del carnet de circulación o titulo</label>
+                                                <input id="foto_carnet[]" name="foto_carnet[]" type="file" accept=".jpg, .png" required class="form-control mcontrol" />
                                             </div>
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Enfermedades que sufre (opcional)</label>
-                                                <input id="reg-cedula" class="form-control mcontrol" />
+                                                <label for="enfermedades">Enfermedades que sufre (opcional)</label>
+                                                <input id="enfermedades" name="enfermedades" class="form-control mcontrol" />
                                             </div>
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Años de experiencia manejando</label>
-                                                <select id="reg-cedula" class="form-control mcontrol">
+                                                <label for="experiencia">Años de experiencia manejando</label>
+                                                <select id="experiencia" name="experiencia" required class="form-control mcontrol">
                                                     <option value="">Seleccione</option>
                                                     <option value="<1">Menos de un año</option>
                                                     <option value="1-3">Entre uno y tres</option>
@@ -153,8 +148,8 @@
 
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Experiencia manejando por caminos irregulares</label>
-                                                <select id="reg-cedula" class="form-control mcontrol">
+                                                <label for="experiencia_offroad">Experiencia manejando por caminos irregulares</label>
+                                                <select id="experiencia_offroad" name="experiencia_offroad" required class="form-control mcontrol">
                                                     <option value="">Seleccione</option>
                                                     <option value="0">Ninguna</option>
                                                     <option value="<1">Menos de un año</option>
@@ -166,8 +161,8 @@
 
 
                                             <div class="form-group form-success-gone">
-                                                <label for="reg-cedula">Antecedentes penales</label>
-                                                <select id="reg-cedula" class="form-control mcontrol">
+                                                <label for="antecedentes">Antecedentes penales</label>
+                                                <select id="antecedentes" name="antecedentes" required class="form-control mcontrol">
                                                     <option value="">Seleccione</option>
                                                     <option value="Si">Si</option>
                                                     <option value="No">No</option>
@@ -175,21 +170,22 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="form-group mb-0 text-center">
                                         <div>
                                             <p class="email-ok  form-text-feedback form-success-visible" style="display: none;" id="informacion"></p>
                                         </div>
-                                        <button id="submit" class="btn btn-outline-white form-success-gone">Iniciar
+                                        <button id="submit" class="btn btn-outline-white form-success-gone">Enviar solicitud
                                         </button>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+
+        </div>
 
         </div>
 
@@ -216,6 +212,86 @@
 
     <script src="resources/js/main.js"></script>
 
+    <script>
+        $(document).ready(function(e) {
+            $("#filesForm").on('submit', function(e) {
+                e.preventDefault();
+                $('#submit').prop('disabled', true);
+                $('.page-loader').show()
+
+
+                let formData = new FormData(this);
+                $('.container-loader').show()
+                $.ajax({
+                    type: 'POST',
+                    url: 'resources/back/unirse.php',
+                    data: formData,
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(msg) {
+
+                        $('#submit').prop('disabled', false);
+                        $('.page-loader').hide()
+
+                        if (msg.trim() == 'ok') {
+
+
+                            Swal.fire({
+                                title: "Enviado",
+                                text: "La solicitud se ha enviado correctamente, muy pronto nos pondremos en contacto contigo.",
+                                icon: "success",
+                                showCancelButton: false,
+                                confirmButtonColor: "#3085d6",
+                                confirmButtonText: "OK"
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    location.href = "index.php";
+                                }
+                            });
+
+
+
+                        } else if (msg.trim() == 'sye') {
+                            Swal.fire({
+                                title: "Denegado",
+                                text: "Ya existe una solicitud con esta cédula, por favor espere a que sea revisada.",
+                                icon: "error",
+                                showCancelButton: false,
+                                confirmButtonColor: "#3085d6",
+                                confirmButtonText: "OK"
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    location.href = "index.php";
+                                }
+                            });
+
+                        } else if (msg.trim() == 'uye') {
+                            Swal.fire({
+                                title: "Denegado",
+                                text: "Ya es miembro de la organización, inicie sesión para continuar.",
+                                icon: "error",
+                                showCancelButton: false,
+                                confirmButtonColor: "#3085d6",
+                                confirmButtonText: "OK"
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    location.href = "login.php";
+                                }
+                            });
+                        } else {
+                            alert(msg)
+                        }
+
+
+                    }
+                }).fail(function(jqXHR, textStatus, errorThrown) {
+                    alert('Uncaught Error: ' + jqXHR.responseText);
+                });
+
+            });
+        }); // REPORTAR EJECUCION DE LA TAREA
+    </script>
 
 </body>
 
