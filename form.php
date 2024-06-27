@@ -135,10 +135,7 @@
                                     <p class="invite anim-3 text-muted"><small>Rellene el formulario, una vez verifiquemos sus datos, le contactaremos.</small></p>
                                 </div>
                                 <form enctype="multipart/form-data" id="filesForm" method="post" class="form-input  anim-4 mt-3 ">
-
                                     <div class="row">
-
-
                                         <div class="col-lg-6">
 
                                             <div class="form-group form-success-gone">
@@ -276,7 +273,7 @@
                 let formData = new FormData(this);
                 $('.container-loader').show()
 
-                $('#loaderContainer').removeClass('hide')
+                $('.loaderContainer').removeClass('hide')
                 $.ajax({
                     type: 'POST',
                     url: 'resources/back/unirse.php',
@@ -287,7 +284,7 @@
                     success: function(msg) {
 
                         $('#submit').prop('disabled', false);
-                $('#loaderContainer').addClass('hide')
+                $('.loaderContainer').addClass('hide')
                      
                         if (msg.trim() == 'ok') {
 
@@ -342,7 +339,7 @@
                     }
                 }).fail(function(jqXHR, textStatus, errorThrown) {
                     alert('Error: ' + jqXHR.responseText);
-                $('#loaderContainer').addClass('hide')
+                $('.loaderContainer').addClass('hide')
 
                 });
 
