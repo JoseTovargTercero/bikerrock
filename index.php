@@ -8,7 +8,7 @@
 
 
     <meta name="description" content="Mucho más que un grupo de entusiastas de las motos todoterreno. Para nosotros, la aventura es una pasión que compartimos y valoramos profundamente. Cada viaje es una oportunidad para explorar nuevos terrenos y desafiar nuestros límites, pero siempre con un fuerte sentido de responsabilidad y respeto.">
-   <!-- <meta name="keywords" content="agency, bootstrap 4, creative, flexbox, jquery, minimalist, motion design, onepage, photography, portfolio, product, responsive, studio, video">
+    <!-- <meta name="keywords" content="agency, bootstrap 4, creative, flexbox, jquery, minimalist, motion design, onepage, photography, portfolio, product, responsive, studio, video">
 -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
@@ -26,6 +26,52 @@
 
     <link rel="stylesheet" href="resources/css/main.css">
     <link rel="stylesheet" href="resources/css/style-gradient.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+                .swiper-container {
+                    width: 100%;
+                    max-width: 60vw;
+                    /* Ajusta este valor según tus necesidades */
+                    margin: auto;
+                }
+
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .img-avatar-alpha {
+                    max-width: 200px;
+                    /* Ajusta este valor según tus necesidades */
+                    margin: auto;
+                }
+
+                .img-1 {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .legend {
+                    color: white;
+                    padding: 10px;
+                }
+                /* Media query para mostrar solo una imagen en dispositivos móviles */
+           /*     @media (max-width: 668px) {
+                    .swiper-container {
+                        max-width: 100%;
+                    }
+                    .swiper-slide {
+                        width: 100%;
+                    }
+                }*/
+            </style>
+
 </head>
 
 
@@ -227,240 +273,243 @@
                 </div>
 
                 <div class="section-content anim text-center">
-
-
-                    <div class="item row justify-content-between">
-
-                        <div class="col-12 col-sm-6 col-md-4 center-vh">
-                            <div class="section-content anim translateUp">
-                                <div class="images text-center">
-                                    <div class="img-avatar-alpha">
-                                        <div class="img-1 shadow">
-                                            <a href="item.html">
-                                                <img class="img" src="resources/img/team/2.jpg" alt="Image">
-                                            </a>
-                                        </div>
-                                        <div class="legend text-center pos-abs">
-                                            <div class="pull-left text-left">
-                                                <h5>O'dosha</h5>
-                                                <p class="small">Presidente</p>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="section-content anim text-center">
+                                        <div class="images text-center">
+                                            <div class="img-avatar-alpha">
+                                                <div class="img-1 shadow">
+                                                        <img class="img" src="resources/img/team/2.jpg" alt="Image">
+                                                </div>
+                                                <div class="legend text-center pos-abs">
+                                                    <div class="pull-left text-left">
+                                                        <h5>O'dosha</h5>
+                                                        <p class="small">Presidente</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
                                             </div>
-                                           
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 center-vh">
-                            <div class="section-content anim">
-                                <div class="images text-center">
-                                    <div class="img-avatar-alpha">
-                                        <div class="img-1 shadow">
-                                            <a href="item.html">
-                                                <img class="img" src="resources/img/team/1.jpg" alt="Image">
-                                            </a>
-                                        </div>
-                                        <div class="legend text-center pos-abs">
-                                            <div class="pull-left text-left">
-                                                <h5>Tercero</h5>
-                                                <p class="small">Jefe de operaciones</p>
+                                <div class="swiper-slide">
+                                    <div class="section-content anim text-center">
+                                        <div class="images text-center">
+                                            <div class="img-avatar-alpha">
+                                                <div class="img-1 shadow">
+                                                        <img class="img" src="resources/img/team/1.jpg" alt="Image">
+                                                </div>
+                                                <div class="legend text-center pos-abs">
+                                                    <div class="pull-left text-left">
+                                                        <h5>Tercero</h5>
+                                                        <p class="small">Jefe de operaciones</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
                                             </div>
-                                           
-                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 center-vh">
-                            <div class="section-content anim translateDown">
-                                <div class="images text-center">
-                                    <div class="img-avatar-alpha">
-                                        <div class="img-1 shadow">
-                                            <a href="item.html">
-                                                <img class="img" src="resources/img/team/3.jpg" alt="Image">
-                                            </a>
-                                        </div>
-                                        <div class="legend text-center pos-abs">
-                                            <div class="pull-left text-left">
-                                                <h5>Aquiles</h5>
-                                                <p class="small">Jefe de seguridad</p>
+                                <div class="swiper-slide">
+                                    <div class="section-content anim text-center">
+                                        <div class="images text-center">
+                                            <div class="img-avatar-alpha">
+                                                <div class="img-1 shadow">
+                                                        <img class="img" src="resources/img/team/3.jpg" alt="Image">
+                                                </div>
+                                                <div class="legend text-center pos-abs">
+                                                    <div class="pull-left text-left">
+                                                        <h5>Aquiles</h5>
+                                                        <p class="small">Jefe de seguridad</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
                                             </div>
-                                            
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class="section-content anim text-center">
+                                        <div class="images text-center">
+                                            <div class="img-avatar-alpha">
+                                                <div class="img-1 shadow">
+                                                    <a href="item.html">
+                                                        <img class="img" src="resources/img/team/4.jpg" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="legend text-center pos-abs">
+                                                    <div class="pull-left text-left">
+                                                        <h5>Charles</h5>
+                                                        <p class="small">Bines y Finanzas</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-content anim text-center">
+                                        <div class="images text-center">
+                                            <div class="img-avatar-alpha">
+                                                <div class="img-1 shadow">
+                                                    <a href="item.html">
+                                                        <img class="img" src="resources/img/team/5.jpg" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="legend text-center pos-abs">
+                                                    <div class="pull-left text-left">
+                                                        <h5>Matatán</h5>
+                                                        <p class="small">Redes y audiovisuales</p>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Añade más swiper-slide divs según sea necesario -->
                             </div>
                         </div>
-                    </div>
-
-                    <footer class="section-footer scrolldown">
+                </div>
+                <footer class="section-footer scrolldown">
                         <a class="down">
                             <span class="icon"></span>
                             <span class="txt">Valores</span>
                         </a>
                     </footer>
-
-                </div>
             </div>
-
         </div>
+            <div class="section section-description fp-auto-height-responsive about-section" data-section="about">
 
-        <div class="section section-description fp-auto-height-responsive about-section" data-section="about">
+                <div class="section-wrapper center-vh dir-col anim">
 
-            <div class="section-wrapper center-vh dir-col anim">
+                    <div class="section-title text-center">
+                        <h5 class="title-bg">Valores</h5>
+                        <h2 class="display-4 display-title anim-2 mb-32">Valores</h2>
+                    </div>
 
-                <div class="section-title text-center">
-                    <h5 class="title-bg">Valores</h5>
-                    <h2 class="display-4 display-title anim-2 mb-32">Valores</h2>
-                </div>
+                    <div class="section-content reduced center-vh dir-col">
 
-                <div class="section-content reduced center-vh dir-col">
-
-                    <div class="col-12 col-sm-12 center-vh">
-                        <div class="section-content anim translateUp">
-                            <div class="images text-center">
-                                <div class="img-frame-legend-alpha">
-                                    <div>
-                                        <img class="img shadow" src="resources/img/familia.jpeg" alt="Image" style="    margin-bottom: -190px;">
+                        <div class="col-12 col-sm-12 center-vh">
+                            <div class="section-content anim translateUp">
+                                <div class="images text-center">
+                                    <div class="img-frame-legend-alpha">
+                                        <div>
+                                            <img class="img shadow" src="resources/img/familia.jpeg" alt="Image" style="    margin-bottom: -190px;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-8 col-sm-8 about-description shadow">
-                        <div class="section-content anim">
+                        <div class="col-8 col-sm-8 about-description shadow">
+                            <div class="section-content anim">
 
-                            <h4 class="text-center">Compañerismo</h4>
-                            <p>En nuestro club, consideramos a cada miembro como parte de nuestra familia. Nos apoyamos mutuamente en cada travesía, asegurándonos de que todos estén seguros y disfruten al máximo de la experiencia. La camaradería y el compañerismo son fundamentales para nosotros, y nos esforzamos por mantener un ambiente de respeto y apoyo mutuo en todo momento.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <footer class="section-footer scrolldown">
-                    <a class="down">
-                        <span class="icon"></span>
-                        <span class="txt">Contacto</span>
-                    </a>
-                </footer>
-            </div>
-
-        </div>
-
-
-
-
-        <div class="section section-description fp-auto-height-responsive about-section" data-section="information">
-
-            <div class="section-wrapper center-vh dir-col anim">
-
-                <div class="section-title text-center">
-                    <h5 class="title-bg">Contacto</h5>
-                    <h2 class="display-4 display-title anim-2 mb-32">Contacto</h2>
-                </div>
-
-                <div class="section-content reduced center-vh dir-col">
-
-
-                    <div class="title-desc">
-                        <div class="anim-2">
-
-                            <p class="text-center">
-                                Si tienes alguna pregunta o propuesta de trabajo, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte y responder a tus consultas lo antes posible. ¡Esperamos saber de ti pronto!
-
-                            </p>
-                        </div>
-                        <div class="address-container anim-3">
-                            <div class="row">
-                                <div class="col-12 col-md-12 col-lg-6 text-center">
-                                    <h4><i class="icon ion-android-call"></i></h4>
-                                    <p>+58 416 0679095</p>
-                                </div>
-                                <div class="col-12 col-md-12 col-lg-6 text-center">
-                                    <h4><i class="icon ion-android-call"></i></h4>
-                                    <p>
-                                        +57 321 9875163
-                                    </p>
-                                </div>
-
+                                <h4 class="text-center">Compañerismo</h4>
+                                <p>En nuestro club, consideramos a cada miembro como parte de nuestra familia. Nos apoyamos mutuamente en cada travesía, asegurándonos de que todos estén seguros y disfruten al máximo de la experiencia. La camaradería y el compañerismo son fundamentales para nosotros, y nos esforzamos por mantener un ambiente de respeto y apoyo mutuo en todo momento.</p>
                             </div>
                         </div>
                     </div>
 
 
-
+                    <footer class="section-footer scrolldown">
+                        <a class="down">
+                            <span class="icon"></span>
+                            <span class="txt">Contacto</span>
+                        </a>
+                    </footer>
                 </div>
 
-
-                <footer class="section-footer scrolldown">
-                    <a class="down">
-                        <span class="icon"></span>
-                        <span class="txt">Solicitar unirse</span>
-                    </a>
-                </footer>
             </div>
+            <div class="section section-description fp-auto-height-responsive about-section" data-section="information">
 
-        </div>
+                <div class="section-wrapper center-vh dir-col anim">
 
+                    <div class="section-title text-center">
+                        <h5 class="title-bg">Contacto</h5>
+                        <h2 class="display-4 display-title anim-2 mb-32">Contacto</h2>
+                    </div>
 
-
-
-
-        <div class="section section-description fp-auto-height-responsive about-section" data-section="join">
-
-            <div class="section-wrapper center-vh dir-col anim">
-
-                <div class="section-title text-center">
-                    <h5 class="title-bg">Unirse</h5>
-                    <h2 class="display-4 display-title anim-2 mb-32">Solicitar unirse</h2>
-                </div>
-
-                <div class="section-content reduced center-vh dir-col">
+                    <div class="section-content reduced center-vh dir-col">
 
 
-                    <div class="title-desc">
-                        <div class="anim-2">
+                        <div class="title-desc">
+                            <div class="anim-2">
 
-                            <p class="text-center">
-                                Si estás interesado en unirte a nuestro club, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible. ¡Esperamos darte la bienvenida a nuestra familia de aventureros!
-                                <br>
-                                <br>
+                                <p class="text-center">
+                                    Si tienes alguna pregunta o propuesta de trabajo, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte y responder a tus consultas lo antes posible. ¡Esperamos saber de ti pronto!
 
-                                <a href="form.php" class="btn btn-outline-white">
-                                    Completar Formulario
-                                </a>
-                            </p>
+                                </p>
+                            </div>
+                            <div class="address-container anim-3">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-6 text-center">
+                                        <h4><i class="icon ion-android-call"></i></h4>
+                                        <p>+58 416 0679095</p>
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-6 text-center">
+                                        <h4><i class="icon ion-android-call"></i></h4>
+                                        <p>
+                                            +57 321 9875163
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
+
 
                     </div>
 
 
+                    <footer class="section-footer scrolldown">
+                        <a class="down">
+                            <span class="icon"></span>
+                            <span class="txt">Solicitar unirse</span>
+                        </a>
+                    </footer>
+                </div>
+
+            </div>
+            <div class="section section-description fp-auto-height-responsive about-section" data-section="join">
+
+                <div class="section-wrapper center-vh dir-col anim">
+
+                    <div class="section-title text-center">
+                        <h5 class="title-bg">Unirse</h5>
+                        <h2 class="display-4 display-title anim-2 mb-32">Solicitar unirse</h2>
+                    </div>
+
+                    <div class="section-content reduced center-vh dir-col">
+
+
+                        <div class="title-desc">
+                            <div class="anim-2">
+
+                                <p class="text-center">
+                                    Si estás interesado en unirte a nuestro club, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible. ¡Esperamos darte la bienvenida a nuestra familia de aventureros!
+                                    <br>
+                                    <br>
+
+                                    <a href="form.php" class="btn btn-outline-white">
+                                        Completar Formulario
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
 
                 </div>
 
-
             </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
     </main>
-
-
-
-
 
     <footer id="site-footer" class="page-footer">
 
@@ -480,7 +529,31 @@
 
         </div>
     </footer>
-
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3, // Muestra tres imágenes a la vez en pantallas grandes
+        spaceBetween: 30,
+        loop: true, // Permite que el carrusel se reinicie al llegar a la última imagen
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2500, // Ajusta el tiempo de retraso según sea necesario
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            }
+        }
+    });
+</script>
 
 
     <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -495,7 +568,7 @@
     <script src="resources/js/main.js"></script>
     <script src="resources/js/log.js"></script>
 
-
+   
 </body>
 
 
