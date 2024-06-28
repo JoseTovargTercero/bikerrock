@@ -237,7 +237,7 @@
                                     <div class="img-avatar-alpha">
                                         <div class="img-1 shadow">
                                             <a href="item.html">
-                                                <img class="img" src="resources/img/team/2.png" alt="Image">
+                                                <img class="img" src="resources/img/team/2.jpg" alt="Image">
                                             </a>
                                         </div>
                                         <div class="legend text-center pos-abs">
@@ -259,7 +259,7 @@
                                     <div class="img-avatar-alpha">
                                         <div class="img-1 shadow">
                                             <a href="item.html">
-                                                <img class="img" src="resources/img/team/1.PNG" alt="Image">
+                                                <img class="img" src="resources/img/team/1.jpg" alt="Image">
                                             </a>
                                         </div>
                                         <div class="legend text-center pos-abs">
@@ -281,7 +281,7 @@
                                     <div class="img-avatar-alpha">
                                         <div class="img-1 shadow">
                                             <a href="item.html">
-                                                <img class="img" src="resources/img/team/3.png" alt="Image">
+                                                <img class="img" src="resources/img/team/3.jpg" alt="Image">
                                             </a>
                                         </div>
                                         <div class="legend text-center pos-abs">
